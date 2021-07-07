@@ -9,7 +9,6 @@ import Fontisto from 'react-native-vector-icons/Fontisto';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
-import { ColorSchemeName } from 'react-native';
 
   
   function TabTwoNavigator() {
@@ -52,11 +51,14 @@ const Tab = createBottomTabNavigator();
 
 function Navigation() {
     return (
-      <Tab.Navigator
+      <Tab.Navigator   
         initialRouteName="TabOneNavigator"
         tabBarOptions={{
-          activeTintColor: '#141414',
+          activeTintColor: '#A9A9A9',
+          style:{backgroundColor:'#141414'},
+          
         }}
+    
       >
         <Tab.Screen
           name="Home"
@@ -119,3 +121,5 @@ function Navigation() {
     
     );
   }
+
+ 

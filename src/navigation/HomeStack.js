@@ -8,7 +8,7 @@ import Profile  from '../components/Profile';
 import Icon from 'react-native-vector-icons/AntDesign'
 import Feather from 'react-native-vector-icons/Feather';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-const logo =  require('../../src/images/bcklogo.png');
+const logo =  require('../../src/images/blueyotubeicon.png');
 
 
 function CustomHeader()  {
@@ -51,18 +51,20 @@ export default HomeStackComponent;
 const styles = StyleSheet.create({
     container: {
       backgroundColor:'#141414',
-   
+      borderBottomWidth:2,
+      borderColor:'#808080',
+      
      },
      subcontainer:{
       flexDirection:'row',
-      margin:10,
-      padding:5,
+      margin:2,
+      padding:-5,
       justifyContent:'space-between',
       alignItems:'center',
      },
      imagecontainer:{
         width:100, 
-        height: 25,
+        height: 55,
      }
     })
    
