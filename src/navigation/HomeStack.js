@@ -8,7 +8,7 @@ import Profile  from '../components/Profile';
 import Icon from 'react-native-vector-icons/AntDesign'
 import Feather from 'react-native-vector-icons/Feather';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-const logo =  require('../../assets/src/images/logo.png');
+const logo =  require('../../src/images/bcklogo.png');
 
 
 function CustomHeader()  {
