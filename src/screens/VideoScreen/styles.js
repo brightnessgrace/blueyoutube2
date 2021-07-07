@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
         color:'black',
     },
     bottomsheet:{
-       color: '#fff',
+      padding:24,
     },
     iconstyle:{
         flexDirection:'row',
@@ -55,7 +55,25 @@ const styles = StyleSheet.create({
        },
        iconLeft:{
          marginLeft: '70%',
-       }
+       },
+       commenttext:{
+        color:'#fff',
+        fontSize:18,
+        fontWeight:"500",
+        marginVertical:10,
+    },publiccomment:{
+        flexDirection:'row',
+        borderTopWidth:1,
+        borderBottomWidth:1,
+        borderColor:'grey',
+        paddingTop:10,
+    },publicnotice:{
+        flexDirection:'row',
+        paddingBottom:10,
+        paddingTop:10,
+        borderTopWidth:1,
+        borderColor:'grey',
+    }
 });
 
 export default styles;

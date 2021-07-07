@@ -1,17 +1,25 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, FlatList, Alert,
-TouchableWithoutFeedback,Keyboard, Image } from 'react-native';
+TouchableWithoutFeedback,Keyboard, Image, Pressable } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import styles from './styles';
+import { useNavigation } from '@react-navigation/native';
 
 
 const Videolistitem = (props) => {
 const{ video } = props;
+
+const navigation = useNavigation();
+
+const openVideoPage = () => (
+  //this.props.navigation.navigate('VideoScreen')
+  navigation.navigate('VideoScreen',{id: video.id})
   
+);
+ 
     return (
 
-
-        <View style ={styles.container}>
+        <Pressable onPress={openVideoPage} style ={styles.container}>
       
         <View style={styles.videoCard}>
              {/* thumbnail */}
@@ -45,12 +53,11 @@ const{ video } = props;
           </View>
 
           </View>
-      </View>
+      </Pressable>
 
 
       
     );
-
   
 }
 

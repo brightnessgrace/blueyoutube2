@@ -10,7 +10,7 @@ const Profile = () => {
   const isDarkMode = useColorScheme();
 
   const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
+    backgroundColor: isDarkMode ? Colors.lighter : Colors.darker,
   
   };
 

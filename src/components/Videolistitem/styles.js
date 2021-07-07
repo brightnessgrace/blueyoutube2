@@ -8,6 +8,9 @@ const styles = StyleSheet.create({
     aspectRatio:16/9,
     width:'100%',  
   },
+  container:{
+    backgroundColor:'#303030',
+  },
   timeContainer:{
     backgroundColor:'#00000099',
     height:25,
@@ -39,14 +42,14 @@ const styles = StyleSheet.create({
   
   },
   title:{
-    fontWeight:"500",
-    fontSize:18,
+    fontWeight:"800",
+    fontSize:16,
     marginBottom:5,
+    color:'#fff',
   },
   subtitle:{
-  color:'grey',
-  fontSize:14,
-  fontWeight:"500",
+  color:'#d3d3d3',
+  fontSize:12,
   }
   });
 

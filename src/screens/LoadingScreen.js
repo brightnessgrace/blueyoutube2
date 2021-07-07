@@ -4,7 +4,7 @@ import styles from './styles';
 import { StackNavigation } from 'react-navigation';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 
-console.log('imefika3');
+
 export default class LoadingScreen extends Component {
    
    componentDidMount(){

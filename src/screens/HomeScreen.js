@@ -2,6 +2,7 @@ import { createStackNavigator } from  'react-navigation-stack';
 import { createAppContainer } from 'react-navigation';
 import LoadingScreen from './LoadingScreen';
 import Profile from '../components/Profile';
+import Navigation from '../navigation';
 
 
 const screens = {
@@ -10,16 +11,17 @@ const screens = {
     Home: {
        screen: LoadingScreen,
        navigationOptions: {
-        header: null,
+        headerShown: false,
        },
     },
 
     Profile:{
 
-        screen: Profile,
+        screen: Navigation,
         navigationOptions: {
-            //  headerShow: false, future use
-              header: null,
+       
+        headerShown: false,
+             
           },
     }
 }
